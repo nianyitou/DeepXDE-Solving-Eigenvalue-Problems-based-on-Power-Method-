@@ -119,3 +119,7 @@ plt.plot(x, abs(u/normalized_np(u))-np.sin(np.pi*x)/normalized_np(np.sin(np.pi*x
 plt.legend()
 plt.show()
 ```
+### Result
+
+![Image text](https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+
