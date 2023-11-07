@@ -120,4 +120,29 @@ plt.legend()
 plt.show()
 ```
 ### Result
+
 ![Image] (https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+
+<br>
+
+![Image] (https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_2.png)
+
+<br>
+
+![Image] (https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
+
+<br>
+Train for 50000 times:<br>
+<br>
+
+![Image] (https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
+
+<br>
+
+![Image] (https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_5.png)
+
+<br>
+
+![Image] (https://github.com/nianyitou/DeepXDE-Solving-Eigenvalue-Problems-based-on-Power-Method-/blob/main/1_D_Harmonic_Eigenvalue_Problem_Figure_6.png)
+
+<br>
