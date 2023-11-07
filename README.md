@@ -120,4 +120,4 @@ plt.legend()
 plt.show()
 ```
 ### Result
-![Image] (/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+![Image] (1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
