@@ -135,9 +135,17 @@ Train for 50000 times:
 
 ![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_6.png)
 
-Increasing training points (8->32) and the number of neurons (5->10) can improve training accuracy:<br>
+Increasing training points (8->32) and the number of neurons (5->10) can improve accuracy:<br>
 
 ```python
 data = dde.data.PDE(geom, pde, bc, 32, 0, solution=func, num_test=100, train_distribution="uniform")
 layer_size = [1] + [10] * 3 + [1]
 ```
+<br>
+The relative error  is improved by an order of magnitude: <br>
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_7.png)
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_8.png)
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_9.png)
