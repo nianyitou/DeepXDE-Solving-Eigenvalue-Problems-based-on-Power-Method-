@@ -121,4 +121,23 @@ plt.show()
 ```
 ### Result
 
-![Image] (1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_2.png)
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
+
+Train for 50000 times:
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_5.png)
+
+![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_6.png)
+
+Increasing training points (8->32) and the number of neurons (5->10) can improve training accuracy:<br>
+
+```python
+data = dde.data.PDE(geom, pde, bc, 32, 0, solution=func, num_test=100, train_distribution="uniform")
+layer_size = [1] + [10] * 3 + [1]
+```
