@@ -16,6 +16,9 @@ def __init__(
         current_index = 0
     ):
 ```
+net_list：list of net. <br>
+scale_list: scale factors of each net. <br>
+current_index: which net in the list is training.
 
 ```python
         self.net_list = net_list
