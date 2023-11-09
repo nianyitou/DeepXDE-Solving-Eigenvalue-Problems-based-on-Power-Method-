@@ -2,7 +2,7 @@
 
 ## 1. pde_gb.py:
 
-Slightly modified version of pde.py in deepxde.data.pde.py, the changes are shown below: <br>
+Slightly modified version of deepxde.data.pde.py, the changes are shown below: <br>
 
 ```python
 self.train_distribution = "uniform"
@@ -43,3 +43,7 @@ def losses(self, targets, outputs, loss_fn, inputs, model, aux=None):
         elif get_num_args(self.pde) == 3:
             f = self.pde(inputs, outputs_pde, aux) * self.scale_list[self.current_index]
 ```
+
+## 2. gradient_boosting.py:
+Corresponding version of deepxde.model.py for gradient boosting, including: <br>
+
