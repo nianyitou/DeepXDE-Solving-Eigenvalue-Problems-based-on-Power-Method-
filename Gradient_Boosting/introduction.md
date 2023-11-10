@@ -132,8 +132,10 @@ Use two net to represent the solution, each training 25000 times, other settings
 
 ### Result
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_2.png)
+![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_2.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
+![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
+
+![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
