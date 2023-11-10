@@ -113,19 +113,19 @@ plt.show()
 ```
 ### Result
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_1.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_2.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_2.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
 
 Train for 50000 times:
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_5.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_5.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_6.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_6.png)
 
 Increasing training points (8->32) and the number of neurons (5->10) can improve accuracy:<br>
 
@@ -136,9 +136,9 @@ layer_size = [1] + [10] * 3 + [1]
 <br>
 The relative error  is improved by an order of magnitude: <br>
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_7.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_7.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_8.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_8.png)
 
-![](image/1_D_Harmonic_Eigenvalue_Problem_Figure_9.png)
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_9.png)
 
