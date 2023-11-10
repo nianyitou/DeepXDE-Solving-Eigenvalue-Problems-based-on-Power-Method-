@@ -6,7 +6,13 @@
 ><br>
 >Use (python -m deepxde.backend.set_default_backend pytorch) to set the default backend pytorch
 
-## 1. File: 1_D_Harmonic_Eigenvalue_Problem:
+## 1. Power_Method:
 
 Solve 1D harmonic eigenvalue problem: <br>
 u_xx + λ*u = 0 <br>
+See Power_Method/introduction.md for details. <br>
+
+## 2. Gradient_Boosting:
+
+Use multiple neural networks to approximate the solution (u = net_1(x) + net_2(x) + ...), greatly improved accuracy. <br>
+See Gradient_Boosting/introduction.md for details. <br>
