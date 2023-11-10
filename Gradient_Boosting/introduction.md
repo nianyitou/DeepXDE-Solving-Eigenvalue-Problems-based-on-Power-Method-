@@ -139,3 +139,5 @@ Use two net to represent the solution, each training 25000 times, other settings
 ![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_3.png)
 
 ![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
+
+Compared with 1_D_Harmonic_Eigenvalue_Problem.py, the accuracy improved by two orders of magnitude.
