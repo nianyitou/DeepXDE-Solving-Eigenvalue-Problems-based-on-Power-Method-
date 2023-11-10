@@ -38,7 +38,7 @@ net = dde.nn.FNN(layer_size, activation, initializer)
 net.apply_output_transform(transform)
 
 model = dde.Model(data, net)
-model.compile("adam", lr=0.0001, metrics=["l2 relative error"], external_trainable_variables=None)
+model.compile("adam", lr=0.00001, metrics=["l2 relative error"], external_trainable_variables=None)
 model.train(iterations=50000)
 
 x = geom.uniform_points(1000, True)
