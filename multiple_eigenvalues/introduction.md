@@ -1,6 +1,6 @@
 ## 1. File: nn_multi_net.py:
 
-
+A neural network that stores multiple eigenfunctions simultaneously.<br>
 
 ```python
     def forward(self, inputs):
@@ -21,3 +21,5 @@
         return torch.cat(x_list,dim=1)
 ```
 <br>
+
+output = [u_1, u_2, ...]
