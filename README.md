@@ -16,7 +16,7 @@ See Power_Method/introduction.md for details. <br>
 
 Solve 1D harmonic eigenvalue problem: <br>
 u_xx + λ*u = 0 <br>
-Calculate multiple eigenvalues and corresponding eigenfunctions simultaneously.
+Calculate multiple eigenvalues and corresponding eigenfunctions simultaneously.<br>
 See multiple_eigenvalues/introduction.md for details. <br>
 
 ## 3. Gradient_Boosting:
