@@ -22,4 +22,6 @@ A neural network that stores multiple eigenfunctions simultaneously.<br>
 ```
 <br>
 
-output = [u_1, u_2, ...]
+output = [u_1, u_2, ...] ([batch,num_eigs])
+or output[:,0] = The first eigenfunction, output[:,1] = The second eigenfunction,...
+
