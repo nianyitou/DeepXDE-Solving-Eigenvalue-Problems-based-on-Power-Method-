@@ -28,4 +28,32 @@ or output[:,0] = The first eigenfunction, output[:,1] = The second eigenfunction
 ## 2. File: multi_max_eigs:
 
 
+```python
+def pde(x, y):
+    dimy = y.shape[1]
+    Lu_k = y.clone().detach()
+    loss = tr.zeros(y.shape[0], 1)
+    for i in range(dimy):
+        Lu_k[:, i:i+1] = dde.grad.hessian(y[:,i:i+1], x) + 1000.0*y[:,i:i+1]
+        Lu_k = Lu_k.clone().detach()
+        for j in range(i):
+            cross = tr.dot(Lu_k[:, j], Lu_k[:, i]).clone().detach()
+            Lu_k[:, i] = Lu_k[:, i] - cross * Lu_k[:, j]
+            Lu_k[:, i] = Lu_k[:, i] / normalized(Lu_k[:, i])
+            Lu_k[:, i] = Lu_k[:, i].clone().detach()
+        Lu_k[:, i] = Lu_k[:, i] / normalized(Lu_k[:, i])
+        Lu_k[:, i] = Lu_k[:, i].clone().detach()
+        loss += tr.abs(Lu_k[:, i:i+1] - y[:,i:i+1])
+
+    return loss
+```
+<br>
+
+### Result
+
+![](/image/multiple_eigenvalues_multi_max_eigs_Figure_1.png)
+
+![](/image/multiple_eigenvalues_multi_max_eigs_Figure_2.png)
+
+
 ## 3. File: multi_min_eigs:
