@@ -72,3 +72,9 @@ loss = tr.abs(Lu_k[:, 0] - y[:,0]) +  tr.abs(Lu_k[:, 1] - y[:,1]) + ...<br>
 
 
 ## 3. File: multi_min_eigs:
+
+### Result
+
+![](/image/multiple_eigenvalues_multi_min_eigs_Figure_1.png)
+
+![](/image/multiple_eigenvalues_multi_min_eigs_Figure_2.png)
