@@ -54,7 +54,14 @@ def pde(x, y):
 y = [eigvec_0, eigvec_1, eigvec_2,...]<br>
 Lu_k = [L(eigvec_0), L(eigvec_1), L(eigvec_2),...]<br>
 Schmidt orthogonalization of Lu_k:<br>
-Lu_k = [L(eigvec_0)/||L(eigvec_0)||, (L(eigvec_1) - dot(L(eigvec_0)/||L(eigvec_0)||,L(eigvec_1))*L(eigvec_0)/||L(eigvec_0)||)/||(L(eigvec_1)-dot(L(eigvec_0)/||L(eigvec_0)||,L(eigvec_1))*L(eigvec_0)/||L(eigvec_0)||)||,...]<br>
+Lu_k[:,0] = L(eigvec_0)/norm(L(eigvec_0))<br>
+Lu_k[:,1] = (L(eigvec_1) - dot(L(eigvec_0)/norm(L(eigvec_0)),L(eigvec_1))*L(eigvec_0)/norm(L(eigvec_0)))/norm(L(eigvec_1) - dot(L(eigvec_0)/norm(L(eigvec_0)),L(eigvec_1))*L(eigvec_0)/norm(L(eigvec_0)))<br>
+Lu_k[:,2] = ...<br>
+.<br>
+.<br>
+.<br>
+loss = tr.abs(Lu_k[:, 0] - y[:,0]) +  tr.abs(Lu_k[:, 1] - y[:,1]) + ...<br>
+
 
 
 ### Result
