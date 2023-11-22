@@ -73,6 +73,28 @@ loss = tr.abs(Lu_k[:, 0] - y[:,0]) +  tr.abs(Lu_k[:, 1] - y[:,1]) + ...<br>
 
 ## 3. File: multi_min_eigs:
 
+Solve 1D harmonic eigenvalue problem: <br>
+u_xx = Lu = λ*u <br>
+Calculate multiple eigenvalues (5 eigenvalues with the largest value for example) and corresponding eigenfunctions simultaneously.<br>
+
+```python
+def pde(x, y):
+    u_old = y.clone().detach()
+    dimy = y.shape[1]
+    Lu_k = tr.zeros_like(y)
+    loss = tr.zeros(y.shape[0], 1)
+    for i in range(dimy):
+        Lu_k[:, i:i+1] = - dde.grad.hessian(y[:,i:i+1], x)
+        Lu_k[:, i:i + 1] = Lu_k[:, i:i+1].clone()/normalized(Lu_k[:, i].clone())
+        for j in range(i):
+            u_old[:, i] = u_old[:, i] - tr.dot(u_old[:, j], u_old[:, i]) * u_old[:, j]
+        u_old[:, i] = u_old[:, i]/ normalized(u_old[:, i])
+        loss += tr.abs(Lu_k[:, i:i+1] - u_old[:,i:i+1])
+
+    return loss
+```
+<br>
+
 ### Result
 
 ![](/image/multiple_eigenvalues_multi_min_eigs_Figure_1.png)
