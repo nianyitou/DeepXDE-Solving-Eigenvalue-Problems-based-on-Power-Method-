@@ -100,3 +100,4 @@ def pde(x, y):
 ![](/image/multiple_eigenvalues_multi_min_eigs_Figure_1.png)
 
 ![](/image/multiple_eigenvalues_multi_min_eigs_Figure_2.png)
+
