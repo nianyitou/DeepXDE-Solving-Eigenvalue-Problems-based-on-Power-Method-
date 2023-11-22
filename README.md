@@ -27,3 +27,5 @@ See multiple_eigenvalues/introduction.md for details. <br>
 
 Use multiple neural networks to approximate the solution (u = net_1(x) + net_2(x) + ...), greatly improved accuracy. <br>
 See Gradient_Boosting/introduction.md for details. <br>
+
+![](/image/Gradient_Boosting_1_D_Harmonic_Eigenvalue_Problem_Figure_4.png)
