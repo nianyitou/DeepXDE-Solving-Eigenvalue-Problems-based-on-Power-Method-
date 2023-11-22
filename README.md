@@ -19,6 +19,8 @@ u_xx + λ*u = 0 <br>
 Calculate multiple eigenvalues and corresponding eigenfunctions simultaneously.<br>
 See multiple_eigenvalues/introduction.md for details. <br>
 
+![](/image/multiple_eigenvalues_multi_max_eigs_Figure_1.png)
+
 ## 3. Gradient_Boosting:
 
 Use multiple neural networks to approximate the solution (u = net_1(x) + net_2(x) + ...), greatly improved accuracy. <br>
