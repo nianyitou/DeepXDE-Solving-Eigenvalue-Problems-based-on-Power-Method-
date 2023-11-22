@@ -27,6 +27,9 @@ or output[:,0] = The first eigenfunction, output[:,1] = The second eigenfunction
 
 ## 2. File: multi_max_eigs:
 
+Solve 1D harmonic eigenvalue problem: <br>
+u_xx + 1000.0u = λ*u <br>
+Calculate multiple eigenvalues (5 eigenvalues with the largest value for example) and corresponding eigenfunctions simultaneously.<br>
 
 ```python
 def pde(x, y):
