@@ -28,7 +28,7 @@ or output[:,0] = The first eigenfunction, output[:,1] = The second eigenfunction
 ## 2. File: multi_max_eigs:
 
 Solve 1D harmonic eigenvalue problem: <br>
-u_xx + 1000.0u = λ*u <br>
+u_xx + 1000.0u = Lu = λ*u <br>
 Calculate multiple eigenvalues (5 eigenvalues with the largest value for example) and corresponding eigenfunctions simultaneously.<br>
 
 ```python
@@ -51,6 +51,11 @@ def pde(x, y):
     return loss
 ```
 <br>
+y = [eigvec_0, eigvec_1, eigvec_2,...]<br>
+Lu_k = [L(eigvec_0), L(eigvec_1), L(eigvec_2),...]<br>
+Schmidt orthogonalization of Lu_k:<br>
+Lu_k = [L(eigvec_0)/||L(eigvec_0)||, (L(eigvec_1)-<L(eigvec_0)/||L(eigvec_0)||,L(eigvec_1)>*L(eigvec_0)/||L(eigvec_0)||)/||(L(eigvec_1)-<L(eigvec_0)/||L(eigvec_0)||,L(eigvec_1)>*L(eigvec_0)/||L(eigvec_0)||)||,...]<br>
+
 
 ### Result
 
