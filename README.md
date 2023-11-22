@@ -12,6 +12,8 @@ Solve 1D harmonic eigenvalue problem: <br>
 u_xx + λ*u = 0 <br>
 See Power_Method/introduction.md for details. <br>
 
+![](/image/1_D_Harmonic_Eigenvalue_Problem_Figure_9.png)
+
 ## 2. multiple_eigenvalues:
 
 Solve 1D harmonic eigenvalue problem: <br>
